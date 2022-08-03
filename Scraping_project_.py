@@ -5,6 +5,7 @@ from datetime import date
 import sqlalchemy
 
 # function, which updates the rent in the active ads
+# edit
 def update_rent(ad_link):
     page = requests.get(ad_link)
     page_content = BS(page.content,"html.parser")
